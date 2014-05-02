@@ -7,7 +7,7 @@ class UserPolicy
   end
 
   def index?
-    @user.admin?
+    @user.vip?
   end
 
   def update?

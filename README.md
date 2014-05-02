@@ -1,122 +1,16 @@
 Skoolify
 =========
 
-This application was generated with the [rails_apps_composer](https://github.com/RailsApps/rails_apps_composer) gem
-provided by the [RailsApps Project](http://railsapps.github.io/).
-
-Diagnostics
------------
-
-This application was built with recipes that are known to work together.
-
-This application was built with preferences that are NOT known to work
-together.
-
-If the application doesn’t work as expected, please [report an issue](https://github.com/RailsApps/rails_apps_composer/issues)
-and include these diagnostics:
-
-We’d also like to know if you’ve found combinations of recipes or
-preferences that do work together.
-
-Recipes:
-
-* apps4
-* controllers
-* core
-* deployment
-* email
-* extras
-* frontend
-* gems
-* git
-* init
-* models
-* prelaunch
-* railsapps
-* readme
-* routes
-* saas
-* setup
-* testing
-* tests4
-* views
-
-Preferences:
-
-* git: true
-* apps4: rails-devise-pundit
-* authentication: devise
-* authorization: pundit
-* starter_app: admin_app
-* quiet_assets: true
-* local_env_file: false
-* better_errors: true
-* pry: false
-* deployment: none
-* dev_webserver: puma
-* prod_webserver: unicorn
-* database: postgresql
-* templates: haml
-* tests: rspec
-* continuous_testing: guard
-* frontend: bootstrap3
-* email: gmail
-* devise_modules: confirmable
-* form_builder: simple_form
-* jsruntime: false
-* github: true
-
-Ruby on Rails
--------------
-
-This application requires:
-
--   Ruby
--   Rails
-
-Learn more about [Installing Rails](http://railsapps.github.io/installing-rails.html).
-
-Database
---------
-
-This application uses PostgreSQL with ActiveRecord.
-
-Development
------------
-
--   Template Engine: Haml
--   Testing Framework: Test::Unit
--   Front-end Framework: Bootstrap 3.0 (Sass)
--   Form Builder: SimpleForm
--   Authentication: Devise
--   Authorization: None
--   Admin: None
-
-Email
------
-
-The application is configured to send email using a Gmail account.
-
-Email delivery is disabled in development.
-
-Getting Started
----------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Skoolify is an open source BaaS for educational institutions.
 
 Documentation and Support
 -------------------------
 
-This is the only documentation.
+Coming soon.
 
 #### Issues
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-
-Similar Projects
-----------------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+You tell me.
 
 Contributing
 ------------
@@ -134,10 +28,7 @@ me and I’ll add a note to the README so that others can find your work.
 
 Credits
 -------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Coming soon(I promise).
 
 License
 -------
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.

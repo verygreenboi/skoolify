@@ -15,6 +15,7 @@ gem 'haml-rails'
 gem 'pg'
 gem 'pundit'
 gem 'simple_form'
+gem 'rails-api'
 group :development do
   gem 'better_errors'
   gem 'binding_of_caller', :platforms=>[:mri_21]
@@ -29,6 +30,7 @@ group :development do
   gem 'rb-fchange', :require=>false
   gem 'rb-fsevent', :require=>false
   gem 'rb-inotify', :require=>false
+  gem 'annotate', :git => 'git://github.com/ctran/annotate_models.git'
 end
 group :development, :test do
   gem 'factory_girl_rails'
