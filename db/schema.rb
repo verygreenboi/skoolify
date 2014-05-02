@@ -11,19 +11,10 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140501041351) do
+ActiveRecord::Schema.define(version: 20140502212417) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
-
-  create_table "api_keys", force: true do |t|
-    t.string   "token"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.integer  "users_id"
-  end
-
-  add_index "api_keys", ["users_id"], name: "index_api_keys_on_users_id", using: :btree
 
   create_table "profiles", force: true do |t|
     t.string   "first_name"
@@ -42,6 +33,15 @@ ActiveRecord::Schema.define(version: 20140501041351) do
   end
 
   add_index "profiles", ["users_id"], name: "index_profiles_on_users_id", using: :btree
+
+  create_table "school_api_keys", force: true do |t|
+    t.string   "token",      null: false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "schools_id"
+  end
+
+  add_index "school_api_keys", ["schools_id"], name: "index_school_api_keys_on_schools_id", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
@@ -62,8 +62,10 @@ ActiveRecord::Schema.define(version: 20140501041351) do
     t.datetime "confirmation_sent_at"
     t.string   "unconfirmed_email"
     t.integer  "role"
+    t.string   "authentication_token"
   end
 
+  add_index "users", ["authentication_token"], name: "index_users_on_authentication_token", using: :btree
   add_index "users", ["email"], name: "index_users_on_email", unique: true, using: :btree
   add_index "users", ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
 

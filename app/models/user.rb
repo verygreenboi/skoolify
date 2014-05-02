@@ -18,8 +18,8 @@ class User < ActiveRecord::Base
 
 	private
 
-	def create_api_key
-	  ApiKey.create :user => self
-	end
+	# def create_api_key
+	#   ApiKey.create :user => self
+	# end
 
 end
